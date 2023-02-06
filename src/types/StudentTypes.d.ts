@@ -1,3 +1,11 @@
+/*
+ *   StudentTypes.d.ts
+ *   Project: exercise_two
+ *
+ *   Author: Morgan Moore
+ *   Created on: Jan 20, 2023
+ */
+
 type CourseGrade = {
   name: string;
   weight: number;
@@ -32,4 +40,10 @@ type FinalExamScores = {
   neededForB: number;
   neededForC: number;
   neededForD: number;
+};
+
+type StudentManager = Record<string, Student>;
+
+type StudentNameParams = {
+  studentName: string;
 };
